@@ -3,7 +3,7 @@ from app import app
 from tables import Results
 from db_config import mysql
 from flask import flash, render_template, request, redirect
-from werkzeug import generate_password_hash, check_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 
 @app.route('/new_user')
 def add_user_view():
