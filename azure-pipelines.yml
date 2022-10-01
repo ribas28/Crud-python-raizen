@@ -68,7 +68,8 @@ stages:
   jobs:
   - deployment: DeploymentJob
     pool:
-      vmImage: $(vmImageName)
+      vmImage: 'RIBAS'
+      name: 'default'
     environment: $(environmentName)
     strategy:
       runOnce:
